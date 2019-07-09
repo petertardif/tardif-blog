@@ -1,0 +1,26 @@
+.footer {
+  background-color: #333333;
+  width: 100%;
+}
+
+.ul {
+  display: flex;
+  list-style: none; 
+  justify-content: center; 
+  padding: 20px;
+}
+
+.a {
+  text-shadow: none; 
+  background-image: none; 
+  text-decoration: none; 
+  padding: 30px;
+}
+
+.fontAwesomeIcon {
+  color: #fefefe;
+}
+
+.fontAwesomeIcon:hover {
+  color: var(--fifth-color);
+}

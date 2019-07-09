@@ -1,0 +1,39 @@
+.header {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  margin: 0;
+  padding-left: 10px;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none; 
+  margin: 0;
+  padding-inline-start: 0px;
+}
+
+.link {
+  background-image: none; 
+  color: rgb(253,253,253);
+  text-decoration: none;
+  text-shadow: none; 
+}
+
+.listlink{
+  color: rgb(253,253,253);
+  display: inline-block;
+  margin-right: 1rem; 
+  text-decoration: none;
+}
+
+.listlink:hover, .link:hover {
+  color: var(--fifth-color);
+}
+
+.h3 {
+  display: inline;
+}

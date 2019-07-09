@@ -1,7 +1,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Tardif's Thoughts`,
+    title: `Peter Tardif`,
   },
   plugins: [
     {

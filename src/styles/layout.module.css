@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #0D0D0D;
+  --second-color: #404040;
+  --third-color: #737373;
+  --fourth-color: #FFFFFF;
+  --fifth-color: #05E177;
+}
+
+body {
+  color: var(--second-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.container {
+  margin: 3rem auto;
+  max-width: 600px;
+}
+

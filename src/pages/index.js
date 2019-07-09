@@ -1,4 +1,5 @@
 import React from "react"
+import 'normalize.css';
 import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
 
@@ -6,7 +7,7 @@ export default ({ data }) => {
   return (
     <Layout> 
       <div>
-        <h1>The Latest Thoughts and Ideas</h1>
+        <h1>Thoughts and Ideas</h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import styles from '../styles/footer.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Footer() {
   return (
-    <footer>
-      <ul style={{ listStyle: `none`, display: `flex`, justifyContent: `center`, padding:`20px` }}>
-        <Link to="mailto:peter.tardif@gmail.com" style={{ textShadow: `none`, backgroundImage: `none`, textDecoration: `none`, padding:`30px` }}>
-          <FontAwesomeIcon icon="envelope" size="lg" />
-        </Link>
-        <Link to="https://twitter.com/petertardif" style={{ textShadow: `none`, backgroundImage: `none`, textDecoration: `none`, padding:`30px` }}>
-          <FontAwesomeIcon icon={["fab", "twitter"]} style={{color:"#000000"}} size="lg" />
-        </Link>
-        <Link to="https://github.com/petertardif" style={{ textShadow: `none`, backgroundImage: `none`, textDecoration: `none`, padding:`30px` }}>
-          <FontAwesomeIcon icon={["fab", "github"]} style={{color:"#000000"}} size="lg" />
-        </Link>
-        <Link to="https://www.linkedin.com/in/petertardif/" target="_blank" style={{ textShadow: `none`, backgroundImage: `none`, padding:`30px`, textDecoration: `none` }}>
-          <FontAwesomeIcon icon={["fab", "linkedin"]} style={{color:"#000000"}} size="lg" />
-        </Link>
+    <footer className={styles.footer}>
+      <ul className={styles.ul}>
+        <a href="mailto:peter.tardif@gmail.com" rel="noopener noreferrer" className={styles.a}>
+          <FontAwesomeIcon icon="envelope" className={styles.fontAwesomeIcon} size="lg"/>
+        </a>
+        <a href="https://twitter.com/petertardif" rel="noopener noreferrer" target="_blank" className={styles.a}>
+          <FontAwesomeIcon icon={["fab", "twitter"]} className={styles.fontAwesomeIcon} size="lg" />
+        </a>
+        <a href="https://github.com/petertardif" rel="noopener noreferrer" target="_blank" className={styles.a}>
+          <FontAwesomeIcon icon={["fab", "github"]} className={styles.fontAwesomeIcon} size="lg" />
+        </a>
+        <a href="https://www.linkedin.com/in/petertardif/" rel="noopener noreferrer" target="_blank" className={styles.a}>
+          <FontAwesomeIcon icon={["fab", "linkedin"]} className={styles.fontAwesomeIcon} size="lg" />
+        </a>
       </ul>
     </footer>
   )
