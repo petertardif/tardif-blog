@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
+
 * {
   box-sizing: border-box;
 }
@@ -10,16 +12,31 @@
   --fifth-color: #05E177;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   color: var(--second-color);
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 1.5;
-  margin: 0;
+  /* margin: 0; */
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .container {
   margin: 3rem auto;
   max-width: 600px;
+  /* flex: 1 0 auto; */
+}
+
+span {
+  font-size: 18px; 
 }
 

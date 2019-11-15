@@ -28,7 +28,7 @@ export default function Header() {
       </Link>
       <ul className={styles.ul} >
         <ListLink to="/about/">About</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
+        <a className={styles.listlink} href="https://www.petertardif.com/">Back to Portfolio</a> 
       </ul>
     </header> 
   )

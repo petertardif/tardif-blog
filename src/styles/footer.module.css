@@ -1,6 +1,7 @@
 .footer {
-  background-color: #333333;
+  background-color: var(--first-color);
   width: 100%;
+  flex-shrink: 0;
 }
 
 .ul {
