@@ -32,10 +32,10 @@ I was floored.  How long had I been throwing stones over the wall to put money i
 <p>Enough was enough. I put a plan in place. I signed up for a course on Udemy to learn SQL. This was great as I continued to use SQL within my work in pulling data for schools, but it was not enough. I moved onto a web development bootcamp course. This was fascinating and I started to create my own application, but I could never hold myself accountable.  I was learning JavaScript, HTML, and CSS at a slow rate and typically only a night or two a week after putting the kids to bed then spending time with my wife. On my 45-60 minute commute home from work, I listened to technology podcasts to learn whatever I could about code and stay up-to-date on tech terms/topics. Exposure was great, but not much stuck. I needed more.</p>
 
 ### Nights and Weekends
-<p>Thinkful's Nights and Weekends Software Engineering bootcamp sealed the deal. Seven months of 50 hour DPS work weeks with 30-35 hours of coding on top of it while trying to be a husband and raising two boys nearly wiped me out. It was difficult. Difficult for everyone. But I learned so much, personally and professionally. Here are a few: 
+<p>Thinkful's Nights and Weekends Software Engineering bootcamp sealed the deal. Seven months of 50 hour DPS work weeks with 30-35 hours of coding on top of it while trying to be a husband and raising two boys nearly wiped me out. It was difficult. Difficult for everyone. But I learned so much, personally and professionally. Here are a few: </p>
 
-- I love learning. 
-- I can learn anything and will never stop learning. 
-- My family and I are capable of anything together. 
+1. I love learning. 
+1. I can learn anything and will never stop learning. 
+1. My family and I are capable of anything together. 
 
-But most importantly, I learned how I will spend the rest of my personal and professional life: leading a life with principle with my family at my side.</p>
+<p>But most importantly, I learned how I will spend the rest of my personal and professional life: leading a life with principle with my family at my side.</p>
