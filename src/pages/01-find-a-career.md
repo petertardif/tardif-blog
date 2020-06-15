@@ -1,6 +1,7 @@
 ---
 title: "Finding Principle"
 date: "2019-09-21"
+featuredImage: "../images/01-javier-allegue-barros-C7B-ExXpOIE-unsplash.jpg"
 ---
 
 >"As the time is short, I will leave out all the flattery...Let us consider the way in which we spend our lives." 
@@ -8,7 +9,7 @@ date: "2019-09-21"
 
 <p>In grade school, I spent my days dreaming of being an archaeologist unearthing long forgotten civilizations. In high school, I dreamed of playing sports, not as a career, but I just loved sports and did not see much further than that. Then I fell in love with reading novels and had a penchant for arguing. I ended up an English major in college. I dreamed of becoming a writer, but never really wrote anything. Nothing very good anyway. So I became a teacher to talk about books and coach sports. Problem solved. </p>
 
-<p>However, I was never satisfied.</p>
+<p>However, I was not satisfied.  </p>
 
 ### A *Brief* Introduction
 <p>2011, 6 years into my teaching career, I moved to Denver. I remember sitting in my classroom after a challenging period. Whoever thought mixing English Language Acquisition students from grades 6 and 9 together in the room never considered the gray hair it would cause me.  Top of my mind as that moment: *what the hell am I doing?*  I fired up my email and came across the subject line "Learn Ruby on Rails."  After 15 minutes of walking through Codecadamy's tutorial and not really understanding what I was doing, I closed the browser.</p>
