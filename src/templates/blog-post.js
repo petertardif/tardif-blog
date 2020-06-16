@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Img from 'gatsby-image';
+import Comments from '../components/Comments';
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -13,6 +14,7 @@ export default ({ data }) => {
         <h3>{post.frontmatter.date}</h3>
         <Img fluid={featuredImgFluid} alt="blue and pink sky with sunset and one pole with road signs pointing in many directions" />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Comments />
       </>
     </Layout>
   )
