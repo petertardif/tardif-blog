@@ -2,7 +2,12 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Peter Tardif`,
+    title: `Peter Tardif Blog`,
+    titleTemplate: `%s · Peter Tardif - Full Stack Developer`,
+    description: `The Ideas, thoughts, and words of Full Stack Developer, Peter Tardif`,
+    url: `https://blog.petertardif.com`,
+    image: `/images/PeterTardif.jpeg`,
+    twitterUsername: `@petertardif`,
   },
   plugins: [
     {

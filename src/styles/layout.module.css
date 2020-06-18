@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab');
-
 * {
   box-sizing: border-box;
 }
@@ -32,11 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   margin: 3rem auto;
-  max-width: 600px;
-  /* flex: 1 0 auto; */
+  max-width: 800px;
+  padding: 0px 20px 10px 20px;
 }
 
 span {
-  font-size: 18px; 
+  font-size: 18px;
 }
-

@@ -3,12 +3,20 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Img from 'gatsby-image';
 import Comments from '../components/Comments';
+import SEO from '../components/seo';
 
 export default ({ data }) => {
   const post = data.markdownRemark
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
   return (
     <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt || 'nothin’'}
+        image={featuredImgFluid.src}
+        pathname={post.fields.slug}
+        article
+      />
       <>
         <h1>{post.frontmatter.title}</h1>
         <h3>{post.frontmatter.date}</h3>
@@ -34,6 +42,9 @@ export const query = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }
