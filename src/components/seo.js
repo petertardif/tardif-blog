@@ -26,7 +26,7 @@ const SEO = ({ title, description, image, article }) => {
   }
 
   return (
-    <Helmet title={seo.title} titleTemplate={titleTemplate}>
+    <Helmet htmlAttributes={seo.lang} title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
@@ -52,6 +52,7 @@ const SEO = ({ title, description, image, article }) => {
 export default SEO
 
 SEO.propTypes = {
+  lang: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
   image: PropTypes.string,
@@ -59,6 +60,7 @@ SEO.propTypes = {
 }
 
 SEO.defaultProps = {
+  lang: `en`,
   title: null,
   description: null,
   image: null,
@@ -72,7 +74,7 @@ const query = graphql`
         titleTemplate
         defaultDescription: description
         siteUrl: url
-        defaultImage: image
+        defaultImage: featuredImage
         twitterUsername
       }
     }

@@ -2,10 +2,12 @@ import React from "react"
 import 'normalize.css';
 import Layout from "../components/layout";
 import { Link, graphql } from "gatsby";
+import SEO from '../components/seo';
 
 export default ({ data }) => {
   return (
-    <Layout> 
+    <Layout>
+      <SEO />
       <div>
         <h1>Thoughts</h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>

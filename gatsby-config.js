@@ -6,7 +6,7 @@ module.exports = {
     titleTemplate: `%s · Peter Tardif - Full Stack Developer`,
     description: `The Ideas, thoughts, and words of Full Stack Developer, Peter Tardif`,
     url: `https://blog.petertardif.com`,
-    image: `/images/PeterTardif.jpeg`,
+    featuredImage: `/images/PeterTardif.jpeg`,
     twitterUsername: `@petertardif`,
   },
   plugins: [
