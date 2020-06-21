@@ -1,14 +1,13 @@
 import React from "react";
 import { useInput } from "../hooks/input-hook";
 
+// modified source code from https://rangle.io/blog/simplifying-controlled-inputs-with-hooks/
 function ContactForm(props) {
   const { value: name, bind: bindName, resetName } = useInput('');
   const { value: email, bind: bindEmail, resetEmail } = useInput('');
   const { value: message, bind: bindMessage, resetMessage } = useInput('');
 
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    alert(`Submitting message '${message}' from name: ${name} and email: ${email}`);
+  const handleSubmit = () => {
     resetName();
     resetEmail();
     resetMessage();
