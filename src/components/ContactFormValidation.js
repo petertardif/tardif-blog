@@ -1,5 +1,6 @@
 export default function validate(values) {
   let errors = {};
+
   if (!values.name) {
     errors.name = 'Name is required.'
   } else if (values.name.trim().length === 0) {

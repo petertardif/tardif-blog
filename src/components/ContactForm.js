@@ -10,7 +10,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form method="post" onSubmit={handleSubmit} netlify-honeypot="bot-field" data-netlify="true" name="contact">
+    <form method="post" onSubmit={handleSubmit} netlify-honeypot="bot-field" data-netlify="true" git saname="contact">
       <input type="hidden" name="bot-field" aria-label="Netlify hidden input to handle submit" />
       <input type="hidden" name="form-name" value="contact" aria-label="Netlify hidden input to handle submit" />
       <div className="field">
