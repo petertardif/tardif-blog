@@ -9,6 +9,13 @@ const useForm = (callback, validate) => {
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
       callback();
+      fetch("/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...values })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
       setValues("");
     }
   }, [errors]);
@@ -20,20 +27,17 @@ const useForm = (callback, validate) => {
   }
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
 
-    fetch("/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...values })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    // if (event) event.preventDefault();
-    event.preventDefault();
-
+    // fetch("/contact", {
+    //   method: "POST",
+    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //   body: encode({ "form-name": "contact", ...values })
+    // })
+    //   .then(() => alert("Success!"))
+    //   .catch(error => alert(error));
   };
 
   const handleChange = (event) => {
