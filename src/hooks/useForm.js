@@ -13,10 +13,27 @@ const useForm = (callback, validate) => {
     }
   }, [errors]);
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   const handleSubmit = (event) => {
-    if (event) event.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
+
+    fetch("/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...values })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    // if (event) event.preventDefault();
+    event.preventDefault();
+
   };
 
   const handleChange = (event) => {
