@@ -1,24 +1,26 @@
 import { useState, useEffect } from 'react';
 
-const useForm = (callback, validate) => {
+const useForm = (validate) => {
 
   const [values, setValues] = useState({});
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSent, setIsSent] = useState(false);
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback();
       fetch("/contact", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...values })
       })
-        .then(() => alert("Success!"))
+        .then(() => console.log("Your message has been submitted successfully. Thanks!"))
         .catch(error => alert(error));
       setValues("");
+      setIsSubmitting(false);
+      setIsSent(true);
     }
-  }, [errors]);
+  }, [values, errors, isSubmitting, isSent]);
 
   const encode = (data) => {
     return Object.keys(data)
@@ -30,14 +32,6 @@ const useForm = (callback, validate) => {
     event.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
-
-    // fetch("/contact", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //   body: encode({ "form-name": "contact", ...values })
-    // })
-    //   .then(() => alert("Success!"))
-    //   .catch(error => alert(error));
   };
 
   const handleChange = (event) => {
@@ -50,6 +44,7 @@ const useForm = (callback, validate) => {
     handleSubmit,
     values,
     errors,
+    isSent
   }
 };
 

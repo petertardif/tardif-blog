@@ -6,8 +6,8 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <ul className={styles.ul}>
-        <a href="mailto:peter.tardif@gmail.com" rel="noopener noreferrer" className={styles.a}>
-          <FontAwesomeIcon icon="envelope" className={styles.fontAwesomeIcon} size="lg"/>
+        <a href="/contact" rel="noopener noreferrer" className={styles.a}>
+          <FontAwesomeIcon icon="envelope" className={styles.fontAwesomeIcon} size="lg" />
         </a>
         <a href="https://twitter.com/petertardif" rel="noopener noreferrer" target="_blank" className={styles.a}>
           <FontAwesomeIcon icon={["fab", "twitter"]} className={styles.fontAwesomeIcon} size="lg" />
