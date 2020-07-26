@@ -31,6 +31,11 @@ const LabelContainer = styled.label`
     font-size: 16px;
   }
 
+  & textarea {
+    height: 150px;
+    resize: none;
+  }
+
   & .error {
     color: red;
     font-weight: bold;
