@@ -9,7 +9,7 @@ export default ({ data }) => {
     <Layout>
       <SEO />
       <div>
-        <h1>Thoughts</h1>
+        <h1>Learning with T</h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

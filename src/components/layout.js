@@ -10,9 +10,9 @@ library.add(fab, faEnvelope)
 
 export default ({ children }) => {
   return (
-    <div>
-      <Header /> 
-      <div className={containerStyles.container}>
+    <div className={containerStyles.siteContainer}>
+      <Header />
+      <div className={containerStyles.contentContainer}>
         {children}
       </div>
       <Footer />

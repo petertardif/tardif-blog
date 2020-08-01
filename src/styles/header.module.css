@@ -7,27 +7,27 @@
   margin: 0;
   padding-left: 10px;
   width: 100%;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 }
 
 ul {
   display: flex;
-  list-style: none; 
+  list-style: none;
   margin: 0;
   padding-inline-start: 0px;
 }
 
 .link {
-  background-image: none; 
-  color: rgb(253,253,253);
+  background-image: none;
+  color: rgb(253, 253, 253);
   text-decoration: none;
-  text-shadow: none; 
+  text-shadow: none;
 }
 
-.listlink{
-  color: rgb(253,253,253);
+.listlink {
+  color: rgb(253, 253, 253);
   display: inline-block;
-  margin-right: 1rem; 
+  margin-right: 1rem;
   text-decoration: none;
 }
 
