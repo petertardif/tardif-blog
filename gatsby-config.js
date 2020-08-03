@@ -2,8 +2,8 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Learning with T`,
-    titleTemplate: `%s · Peter Tardif's Blogg- Full Stack Developer`,
+    title: `Peter Tardif`,
+    titleTemplate: `%s · Peter Tardif - Full Stack Developer`,
     description: `The Ideas, thoughts, and words of Full Stack Developer, Peter Tardif`,
     url: `https://blog.petertardif.com`,
     featuredImage: `/images/PeterTardif.jpeg`,
