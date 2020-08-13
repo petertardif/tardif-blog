@@ -20,7 +20,7 @@ export default ({ data }) => {
       <>
         <h1>{post.frontmatter.title}</h1>
         <h3>{post.frontmatter.date}</h3>
-        <Img fluid={featuredImgFluid} alt="blue and pink sky with sunset and one pole with road signs pointing in many directions" />
+        <Img fluid={featuredImgFluid} alt={post.frontmatter.altText} />
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <Comments />
       </>
@@ -42,6 +42,7 @@ export const query = graphql`
             }
           }
         }
+        altText
       }
       fields {
         slug

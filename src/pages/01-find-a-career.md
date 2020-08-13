@@ -2,7 +2,8 @@
 title: "Finding Principle"
 date: "2019-09-21"
 featuredImage: "../images/01-javier-allegue-barros-C7B-ExXpOIE-unsplash.jpg"
-tags: ["career", "web development"]
+altText: "blue and pink sky with sunset and one pole with road signs pointing in many directions"
+tags: ["career", "development"]
 ---
 
 >"As the time is short, I will leave out all the flattery...Let us consider the way in which we spend our lives." 
