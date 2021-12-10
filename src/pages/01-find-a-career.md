@@ -38,7 +38,7 @@ I was floored.  How long had I been throwing stones over the wall to put money i
 <p>Thinkful's Nights and Weekends Software Engineering bootcamp sealed the deal. Seven months of 50 hour DPS work weeks with 30-35 hours of coding on top of it while trying to be a husband and raising two boys nearly wiped me out. It was difficult. Difficult for everyone. But I learned so much, personally and professionally. Here are a few: </p>
 
 1. I love learning. 
-1. I can learn anything and will never stop learning. 
-1. My family and I are capable of anything together. 
+2. I can learn anything and will never stop learning. 
+3. My family and I are capable of anything together. 
 
 <p>But most importantly, I learned how I will spend the rest of my personal and professional life: leading a life with principle with my family at my side.</p>

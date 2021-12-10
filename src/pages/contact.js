@@ -10,9 +10,9 @@ const ContactFormContainer = styled.div`
   justify-content: center;
 
   & .formContainer {
-    margin: 2.5rem;
+    // margin: 2.5rem;
     max-width: 800px;
-    padding: 0px 20px 10px 20px;
+    // padding: 0px 20px 10px 20px;
     flex: 1;
 }
 `;
