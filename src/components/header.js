@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
+import React from "react"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 const HeaderContainer = styled.header`
   background-color: var(--first-color);
@@ -31,7 +31,7 @@ const HeaderContainer = styled.header`
     margin-right: 1rem;
     text-decoration: none;
   }
-  
+
   & .link {
     background-image: none;
     color: rgb(253, 253, 253);
@@ -46,15 +46,18 @@ const HeaderContainer = styled.header`
     text-decoration: none;
   }
 
-  & .listlink:hover, .link:hover {
+  & .listlink:hover,
+  .link:hover {
     color: var(--fifth-color);
   }
-`;
+`
 
 export default function Header() {
   const ListLink = props => (
-    <li >
-      <Link to={props.to} className="listlink" >{props.children}</Link>
+    <li>
+      <Link to={props.to} className="listlink">
+        {props.children}
+      </Link>
     </li>
   )
 
@@ -75,9 +78,12 @@ export default function Header() {
       <Link to="/" className="link">
         <h2> {data.site.siteMetadata.title} </h2>
       </Link>
-      <ul >
+      <ul>
+        <a className="listlink" href="https://www.petertardif.com/">
+          Portfolio
+        </a>
         <ListLink to="/about/">About</ListLink>
-        <a className="listlink" href="https://www.petertardif.com/">Portfolio</a>
+        <ListLink to="/contact">Contact</ListLink>
       </ul>
     </HeaderContainer>
   )

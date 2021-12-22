@@ -1,10 +1,10 @@
 import React from "react"
-import 'normalize.css';
-import Layout from "../components/layout";
-import { Link, graphql } from "gatsby";
-import SEO from '../components/seo';
+import "normalize.css"
+import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
+import SEO from "../components/seo"
 import kebabCase from "lodash/kebabCase"
-import styled from 'styled-components';
+import styled from "styled-components"
 
 const TagList = styled.ul`
   display: flex;
@@ -41,12 +41,15 @@ export default ({ data }) => {
     <Layout>
       <SEO />
       <div>
-        <h1>Learning with T</h1>
+        <h1>Learning with Tardif</h1>
         <div>
           <TagList>
             {data.allMarkdownRemark.group.map(tag => (
               <li key={tag.fieldValue}>
-                <Link to={`/tags/${kebabCase(tag.fieldValue)}/`} className={tag.fieldValue}>
+                <Link
+                  to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                  className={tag.fieldValue}
+                >
                   {tag.fieldValue} ({tag.totalCount})
                 </Link>
               </li>
@@ -57,7 +60,9 @@ export default ({ data }) => {
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <Link to={node.fields.slug} style={{ textDecoration: `none` }}>
-              <h3>{node.frontmatter.title}{" "} - <span>{node.frontmatter.date}</span></h3>
+              <h3>
+                {node.frontmatter.title} - <span>{node.frontmatter.date}</span>
+              </h3>
             </Link>
             <p>{node.excerpt}</p>
           </div>
