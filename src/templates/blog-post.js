@@ -8,12 +8,13 @@ import SEO from "../components/seo"
 export default ({ data }) => {
   const post = data.markdownRemark
   let featuredImgFluid = post.frontmatter.featuredImage.childImageSharp.fluid
-  let secondaryImgFluid = post.frontmatter.secondaryImage.childImageSharp.fluid.src
-    .split("/")
-    .at(-1)
+  let secondaryImgFluid = post.frontmatter.secondaryImage.childImageSharp.fluid.src.split(
+    "/"
+  )
+  let secondaryImageTitle = secondaryImgFluid[secondaryImgFluid.length - 1]
 
   let secondaryImage =
-    secondaryImgFluid === "PeterTardif.jpg" ? (
+    secondaryImageTitle === "PeterTardif.jpg" ? (
       <></>
     ) : (
       <Img fluid={post.frontmatter.secondaryImage.childImageSharp.fluid} />
